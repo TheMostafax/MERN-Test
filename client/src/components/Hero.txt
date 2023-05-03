@@ -1,0 +1,22 @@
+import React from 'react';
+import '../App.css';
+import { Button } from './Button';
+import './HeroSection.css';
+function HeroSection() {
+  return (
+    <div className='hero-container'>
+     
+      <h1> Welcome to Ozone3 Creative Studios</h1>
+      <div className='hero-btns'>
+        <Button
+          className='btnsw'
+          buttonStyle='btn--outlinew'
+          buttonSize='btn--largew'
+        >
+          Watch our products
+        </Button>
+      </div>
+    </div>
+  );
+}
+export default HeroSection;

@@ -10,39 +10,22 @@ import SignUp from './components/pages/SignUp';
 import SignIn from './components/pages/SignIn';
 
 function App() {
-    return ( <
-        >
-        <
-        Router >
-        <
-        Navbar / >
-        <
-        Switch >
-        <
-        Route path = '/'
-        exact component = { Home }
-        /> <
-        Route path = '/about'
-        component = { About }
-        /> <
-        Route path = '/Works'
-        component = { Works }
-        /> <
-        Route path = '/contact'
-        component = { Contact }
-        /> <
-        Route path = '/sign-up'
-        component = { SignUp }
-        /> <
-        Route path = '/sign-in'
-        component = { SignIn }
-        />
+  return (
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/about' component={About} />
+          <Route path='/Works' component={Works} />
+          <Route path='/contact' component={Contact} />
+          <Route path='/sign-up' component={SignUp} />
+          <Route path='/sign-in' component={SignIn} />
 
-        <
-        /Switch> <
-        /Router> <
-        />
-    );
+        </Switch>
+      </Router>
+    </>
+  );
 }
 
 export default App;
